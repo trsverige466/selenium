@@ -13,6 +13,7 @@ public class C07_ManageWindowsSet {
         WebDriver driver = new ChromeDriver();
 
         //2. Amazon soyfasina gidelim. https://www.amazon.com/
+
         driver.get("https://www.amazon.com");
         //3. Sayfanin konumunu ve boyutlarini yazdirin
         System.out.println(driver.manage().window().getPosition());

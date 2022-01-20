@@ -7,7 +7,7 @@ public class C03_GetMethods {
     //2. Yeni bir class olusturalim : C01_GetMethods
 
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver","src/driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","resources/drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         //3. Amazon sayfasina gidelim. https://www.amazon.com/
         driver.get("https://www.amazon.com/");

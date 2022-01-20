@@ -20,5 +20,7 @@ public class C04_DriverNavigateMethodlari {
 
         driver.navigate().refresh();
 
+        driver.close();
+
     }
 }

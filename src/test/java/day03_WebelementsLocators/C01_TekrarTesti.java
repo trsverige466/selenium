@@ -5,13 +5,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 public class C01_TekrarTesti {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver","src/driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","resources/drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         //2. Youtube web sayfasına gidin ve sayfa başlığının “youtube” olup olmadığını doğrulayın (verify),
         // eğer değilse doğru başlığı(Actual Title) konsolda yazdirin.
         driver.navigate().to("https://www.youtube.com");
+
         String actualTitleYoutube= driver.getTitle();
         String expectedYoutubeTitle="youtube";
         if (actualTitleYoutube.equals(expectedYoutubeTitle)){

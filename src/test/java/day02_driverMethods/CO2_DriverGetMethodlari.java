@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class CO2_DriverGetMethodlari {
     public static void main(String[] args) {
 
-        System.setProperty("webdriver.chrome.driver","src/driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","resources/drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.amazon.com");
         //driver.getTitle();// bize string bir ifade dondurur sayfanın title'ni getirir
