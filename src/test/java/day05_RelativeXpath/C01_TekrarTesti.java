@@ -44,6 +44,6 @@ public class C01_TekrarTesti {
             System.out.println("Fiyat testi FAILED");
         }
         //10-Sayfayi kapatin
-        driver.close();
+        driver.quit();
     }
 }
